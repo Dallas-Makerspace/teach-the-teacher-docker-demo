@@ -1,0 +1,16 @@
+sudo: false
+language: C
+services:
+  - docker
+cache:
+  directories:
+  - "$HOME/.cache"
+script:
+  - pip install docker-compose
+  - sh publish.sh
+notifications:
+  email:
+    recipients:
+    - denzuko@dallasmakerspace.org
+    on_success: change
+    on_failure: always
