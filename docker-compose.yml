@@ -1,0 +1,7 @@
+---
+version: '3.4'
+services:
+  web:
+    image: dallasmakerspace/teach-the-teacher-docker-demo:latest
+    build:
+      context: .
