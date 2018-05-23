@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 language: C
 services:
   - docker
@@ -6,7 +6,6 @@ cache:
   directories:
   - "$HOME/.cache"
 script:
-  - pip install docker-compose
   - sh publish.sh
 notifications:
   email:
